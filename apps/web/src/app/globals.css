@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+    /*========== COLORS ========== */
+    --color-primary: #ff385c;
+    --color-secondary: #222222;
+
+    --text-primary: #222222;
+    --text-secondary: #6A6A6A;
+
+    --bg-primary: #c1c1c1;
+    --bg-navbar: linear-gradient(180deg, #ffffff 39.9%, #f8f8f8 100%);
+
+    --bg-border-primary: #ebebeb;
+    --bg-border-secondary: #dddddd;
+
+
+    /*========== TYPOGRAPHY ==========
+    --font-primary: "Inter", system-ui, sans-serif;
+    --font-secondary: "Roboto", system-ui, sans-serif;*/
+
+    /*========== BREAKPOINT ==========*/
+
+}
+
+@layer base {
+  *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  html {
+      scroll-behavior: smooth;
+  }
+  input,
+  button,
+  textarea {
+      border: none;
+      outline: none;
+  }
+  ul, li {
+      list-style: none;
+  }
+  a {
+      text-decoration: none;
+  }
+}
