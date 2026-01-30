@@ -1,47 +1,51 @@
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
+import PropertyCarousel from "@/components/home/property-carousel";
+import InspirationSection from "@/components/home/inspiration-section";
+import { 
+  mockProperties, 
+  trendingProperties, 
+  nearbyProperties 
+} from "@/data/mock-properties";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-24">
-      <div className="max-w-5xl mx-auto space-y-8">
-        <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold">Airbnb Full Clone</h1>
-          <p className="text-muted-foreground">
-            Frontend con Next.js 15 + Backend con NestJS
-          </p>
-        </div>
+    <main className="min-h-screen">
+      <Header />
+      
+      {/* Header */}
+      <div className="h-50" />
 
-        <div className="grid md:grid-cols-2 gap-4">
-          <Card className="p-6 space-y-4">
-            <h2 className="text-2xl font-semibold">Backend Ready</h2>
-            <ul className="space-y-2 text-sm">
-              <li>✅ 33 endpoints funcionando</li>
-              <li>✅ Autenticación JWT</li>
-              <li>✅ Stripe integrado</li>
-              <li>✅ Sistema de reviews</li>
-              <li>✅ Sistema de favoritos</li>
-            </ul>
-          </Card>
+      <div className="space-y-10 py-8">
+        <PropertyCarousel 
+          properties={mockProperties} 
+          title="Alojamientos populares en España" 
+        />
 
-          <Card className="p-6 space-y-4">
-            <h2 className="text-2xl font-semibold">Frontend Setup</h2>
-            <ul className="space-y-2 text-sm">
-              <li>✅ Next.js 15 instalado</li>
-              <li>✅ TailwindCSS configurado</li>
-              <li>✅ shadcn/ui instalado</li>
-              <li>✅ API client configurado</li>
-              <li>✅ Zustand store creado</li>
-            </ul>
-          </Card>
-        </div>
+        <PropertyCarousel 
+          properties={trendingProperties} 
+          title="Destinos de moda en España" 
+        />
 
-        <div className="flex justify-center gap-4">
-          <Button size="lg">Ver Propiedades</Button>
-          <Button size="lg" variant="outline">Login</Button>
-        </div>
+        <PropertyCarousel 
+          properties={nearbyProperties} 
+          title="Escapadas cerca de Madrid" 
+        />
 
+        <PropertyCarousel 
+          properties={mockProperties.slice().reverse()} 
+          title="Descubre Barcelona" 
+        />
+
+        <PropertyCarousel 
+          properties={trendingProperties.slice().reverse()} 
+          title="Costa mediterránea" 
+        />
       </div>
+
+      <InspirationSection />
+
+      <Footer />
     </main>
-  )
+  );
 }

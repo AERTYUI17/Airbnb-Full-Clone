@@ -5,15 +5,16 @@
     /*========== COLORS ========== */
     --color-primary: #ff385c;
     --color-secondary: #222222;
+    --color-tertiary: #717171;
 
-    --text-primary: #222222;
-    --text-secondary: #6A6A6A;
+    --color-text: #222222;
+    --color-text-2: #6A6A6A;
 
-    --bg-primary: #c1c1c1;
-    --bg-navbar: linear-gradient(180deg, #ffffff 39.9%, #f8f8f8 100%);
+    --color-bg-primary: #c1c1c1;
+    --color-navbar: #f8f8f8;
 
-    --bg-border-primary: #ebebeb;
-    --bg-border-secondary: #dddddd;
+    --color-border-primary: #ebebeb;
+    --color-border-secondary: #dddddd;
 
 
     /*========== TYPOGRAPHY ==========
@@ -24,6 +25,55 @@
 
 }
 
+/* ========== AIRBNB CEREAL FONTS ========== */
+@font-face {
+  font-family: 'Airbnb Cereal';
+  src: url('/fonts/AirbnbCereal_W_Lt.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal';
+  src: url('/fonts/AirbnbCereal_W_Bk.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal';
+  src: url('/fonts/AirbnbCereal_W_Md.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal';
+  src: url('/fonts/AirbnbCereal_W_Bd.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal';
+  src: url('/fonts/AirbnbCereal_W_XBd.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal';
+  src: url('/fonts/AirbnbCereal_W_Blk.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   *, *::before, *::after {
       margin: 0;
@@ -32,6 +82,10 @@
   }
   html {
       scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Airbnb Cereal', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--color-text);
   }
   input,
   button,
@@ -45,4 +99,12 @@
   a {
       text-decoration: none;
   }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
