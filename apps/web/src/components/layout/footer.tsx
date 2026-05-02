@@ -7,7 +7,7 @@ const Footer = () => {
   const supportLinks = [
     { label: "Centro de ayuda", href: "/help" },
     { label: "Ayuda: problema de seguridad", href: "/help/safety" },
-    { label: "AirCover", href: "/aircover" },
+    { label: "AjirCover", href: "/aircover" },
     { label: "Lucha contra la discriminación", href: "/against-discrimination" },
     { label: "Ayuda a la discapacidad", href: "/accessibility" },
     { label: "Opciones de cancelación", href: "/help/cancellation" },
@@ -15,10 +15,10 @@ const Footer = () => {
   ];
 
   const hostLinks = [
-    { label: "Pon tu casa en Airbnb", href: "/host/homes" },
-    { label: "Pon tu experiencia en Airbnb", href: "/host/experiences" },
-    { label: "Pon tu servicio en Airbnb", href: "/host/services" },
-    { label: "AirCover para anfitriones", href: "/aircover-for-hosts" },
+    { label: "Pon tu casa en Ajir", href: "/host/homes" },
+    { label: "Pon tu experiencia en Ajir", href: "/host/experiences" },
+    { label: "Pon tu servicio en Ajir", href: "/host/services" },
+    { label: "AjirCover para anfitriones", href: "/aircover-for-hosts" },
     { label: "Recursos para anfitriones", href: "/resources" },
     { label: "Foro de la comunidad", href: "/community" },
     { label: "Ser un anfitrión responsable", href: "/responsible-hosting" },
@@ -26,13 +26,13 @@ const Footer = () => {
     { label: "Busca un coanfitrión", href: "/co-hosts" },
   ];
 
-  const airbnbLinks = [
+  const ajirLinks = [
     { label: "Novedades", href: "/release" },
     { label: "Newsroom", href: "/press/news" },
     { label: "Empleo", href: "/careers" },
     { label: "Inversores", href: "/investors" },
     { label: "Tarjetas regalo", href: "/giftcards" },
-    { label: "Estancias con Airbnb.org", href: "/airbnb-org" },
+    { label: "Estancias con Ajir.org", href: "/airbnb-org" },
   ];
 
   return (
@@ -72,9 +72,9 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-secondary mb-4">Airbnb</h3>
+            <h3 className="text-sm font-semibold text-secondary mb-4">Ajir</h3>
             <ul className="space-y-3">
-              {airbnbLinks.map((link) => (
+              {ajirLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -135,7 +135,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mt-6 text-sm text-secondary">
-            <span>© 2026 Airbnb, Inc.</span>
+            <span>© 2026 Ajir, Inc.</span>
             <span className="hidden md:inline">·</span>
             <Link href="/terms/privacy" className="hover:underline">
               Privacidad

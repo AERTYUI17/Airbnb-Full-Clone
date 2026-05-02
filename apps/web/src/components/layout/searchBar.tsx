@@ -131,7 +131,7 @@ const SearchBar = ({ initialSection }: SearchBarProps) => {
                     <div className="text-sm text-gray-500">Añade viajeros</div>
                 </button>
 
-                <button className="mr-2 p-4 bg-rose-500 hover:bg-rose-600 text-white rounded-full cursor-pointer transition-colors">
+                <button className="mr-2 p-4 bg-primary hover:bg-[#3da59e] text-white rounded-full cursor-pointer transition-colors">
                     <Search className="w-4 h-4" />
                 </button>
             </div>

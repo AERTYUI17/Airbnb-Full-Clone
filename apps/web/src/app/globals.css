@@ -3,18 +3,18 @@
 
 @theme {
     /*========== COLORS ========== */
-    --color-primary: #ff385c;
-    --color-secondary: #222222;
-    --color-tertiary: #717171;
+    --color-primary: #4EC4B5;
+    --color-secondary: #1E4631;
+    --color-tertiary: #1E4631;
 
-    --color-text: #222222;
-    --color-text-2: #6A6A6A;
+    --color-text: #1E4631;
+    --color-text-2: #1E4631;
 
-    --color-bg-primary: #c1c1c1;
-    --color-navbar: #f8f8f8;
+    --color-bg-primary: #FFFFFF;
+    --color-navbar: #FFFFFF;
 
-    --color-border-primary: #ebebeb;
-    --color-border-secondary: #dddddd;
+    --color-border-primary: #F5F5F5;
+    --color-border-secondary: #F5F5F5;
 
 
     /*========== TYPOGRAPHY ==========
