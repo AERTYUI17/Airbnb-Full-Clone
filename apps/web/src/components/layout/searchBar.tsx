@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 import { Search, Plus, Minus } from "lucide-react";
 
 type ActiveSection = 'destination' | 'dates' | 'guests' | null;
@@ -10,6 +12,8 @@ interface SearchBarProps {
 }
 
 const SearchBar = ({ initialSection }: SearchBarProps) => {
+    const router = useRouter();
+    const locale = useLocale();
     const [activeSection, setActiveSection] = useState<ActiveSection>(initialSection || null);
     const [dateTab, setDateTab] = useState<'dates' | 'months' | 'flexible'>('dates');
     const [flexibility, setFlexibility] = useState<string>('exact');
@@ -22,53 +26,53 @@ const SearchBar = ({ initialSection }: SearchBarProps) => {
 
     const suggestedDestinations = [
         {
-            name: "Madrid, Madrid",
-            description: "Por lugares de interés como este: Parque de El Retiro",
+            name: "Argel, Argelia",
+            description: "La capital principal y destino cultural",
             image: "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/e9efb4fc-a002-40cf-8811-42ef5ce74518.png"
         },
         {
-            name: "Valencia, Comunidad Valenciana",
-            description: "Por su impresionante arquitectura",
+            name: "Orán, Argelia",
+            description: "Famosa por su hermosa costa mediterránea",
             image: "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/7c3c8e23-e8c3-4962-9df2-ed59826b073c.png"
         },
         {
-            name: "Barcelona, Cataluña",
-            description: "Un destino de playa popular",
+            name: "Constantina, Argelia",
+            description: "Joya en las montañas del Sahara",
             image: "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/aeba68c0-44ba-4ee6-9835-da23d7fb0a65.png"
         },
         {
-            name: "Paris, Francia",
-            description: "Por su animada vida nocturna",
+            name: "Ánaba, Argelia",
+            description: "Destino costero popular",
             image: "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/eb63c43e-fd0e-48f2-8cab-ef156da3bc0c.png"
         },
         {
-            name: "Sevilla, Andalucía",
-            description: "Por lugares de interés como este: Metropol Parasol",
+            name: "Blida, Argelia",
+            description: "Conocida como la ciudad de los naranjos",
             image: "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/bac337c4-8528-4941-bca0-0ecfd95f5d82.png"
         },
         {
-            name: "Lisboa, Portugal",
-            description: "Por su exquisita gastronomía",
+            name: "Tlemecén, Argelia",
+            description: "Rica en patrimonio cultural e historia",
             image: "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/d2d9f652-03f0-4c23-9246-f825ffd1f0d4.png"
         },
         {
-            name: "Oporto, Portugal",
-            description: "Por su impresionante arquitectura",
+            name: "Batna, Argelia",
+            description: "Puerta al Sahara y montañas de Aurés",
             image: "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/13943162-b620-4595-89af-74f3d557f6ea.png"
         },
         {
-            name: "Roma, Italia",
-            description: "Por lugares de interés como este: Fontana di Trevi",
+            name: "Sidi Bel Abbés, Argelia",
+            description: "Centro histórico con arquitectura única",
             image: "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/bac96687-79f5-4056-9f47-c10f2e3f1ffc.png"
         },
         {
-            name: "Bilbao, País Vasco",
-            description: "Por su exquisita gastronomía",
+            name: "Tipasa, Argelia",
+            description: "Ruinas antiguas junto al Mar Mediterráneo",
             image: "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-1/original/b5648dad-1d76-43e4-9bbd-18ebce84ab7f.png"
         },
         {
-            name: "San Sebastián, País Vasco",
-            description: "Un destino de playa popular",
+            name: "Medea, Argelia",
+            description: "Pueblo pintoresco en las montañas",
             image: "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-1/original/6d1d155d-c7db-49d7-87b2-3864332d1487.png"
         }
     ];
@@ -131,7 +135,9 @@ const SearchBar = ({ initialSection }: SearchBarProps) => {
                     <div className="text-sm text-gray-500">Añade viajeros</div>
                 </button>
 
-                <button className="mr-2 p-4 bg-primary hover:bg-[#3da59e] text-white rounded-full cursor-pointer transition-colors">
+                <button 
+                    onClick={() => router.push(`/${locale}/properties`)}
+                    className="mr-2 p-4 bg-primary hover:bg-[#3da59e] text-white rounded-full cursor-pointer transition-colors">
                     <Search className="w-4 h-4" />
                 </button>
             </div>

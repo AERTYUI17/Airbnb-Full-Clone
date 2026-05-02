@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { 
@@ -18,16 +18,17 @@ import { useState } from 'react';
 
 export default function DashboardSidebar() {
   const t = useTranslations('dashboard');
+  const locale = useLocale();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: '/dashboard', icon: Home, label: t('profile') },
-    { href: '/dashboard/bookings', icon: BookOpen, label: t('bookings') },
-    { href: '/dashboard/saved', icon: Heart, label: t('saved') },
-    { href: '/dashboard/listings', icon: Briefcase, label: t('listings') },
-    { href: '/dashboard/reviews', icon: MessageCircle, label: t('reviews') },
-    { href: '/dashboard/settings', icon: Settings, label: t('settings') },
+    { href: `/${locale}/dashboard`, icon: Home, label: t('profile') },
+    { href: `/${locale}/dashboard/bookings`, icon: BookOpen, label: t('bookings') },
+    { href: `/${locale}/dashboard/saved`, icon: Heart, label: t('saved') },
+    { href: `/${locale}/dashboard/listings`, icon: Briefcase, label: t('listings') },
+    { href: `/${locale}/dashboard/reviews`, icon: MessageCircle, label: t('reviews') },
+    { href: `/${locale}/dashboard/settings`, icon: Settings, label: t('settings') },
   ];
 
   return (
@@ -47,7 +48,7 @@ export default function DashboardSidebar() {
         } md:relative md:border-r md:bg-background`}
       >
         <div className="p-6">
-          <Link href="/" className="text-2xl font-bold text-primary">
+          <Link href={`/${locale}`} className="text-2xl font-bold text-primary">
             Ajir
           </Link>
         </div>

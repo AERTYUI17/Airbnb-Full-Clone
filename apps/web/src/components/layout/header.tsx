@@ -56,9 +56,9 @@ const Header = () => {
                 showExpanded ? 'h-[200px]' : 'h-20'
             }`}>
                 <nav className="h-20 flex items-center justify-between w-full max-w-[1824px] mx-auto px-6 md:px-10 lg:px-12">
-                    <div className="cursor-pointer transition-transform duration-200 hover:scale-105">
+                    <Link href={`/${locale}`} className="cursor-pointer transition-transform duration-200 hover:scale-105">
                         <Logo />
-                    </div>
+                    </Link>
                     
                     <div className={`hidden lg:flex items-center gap-6 transition-all duration-300 ${
                         showExpanded ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none absolute'

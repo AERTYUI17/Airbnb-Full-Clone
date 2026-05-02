@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter, useLocale } from "next-intl";
 import Image from "next/image";
 import { Heart, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import type { Property } from "./property-carousel";
@@ -10,9 +11,15 @@ interface PropertyCardProps {
 }
 
 const PropertyCard = ({ property }: PropertyCardProps) => {
+  const router = useRouter();
+  const locale = useLocale();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isLiked, setIsLiked] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+
+  const handleCardClick = () => {
+    router.push(`/${locale}/properties/${property.id}`);
+  };
 
   const nextImage = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -41,6 +48,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
       className="w-full cursor-pointer group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={handleCardClick}
     >
       <div className="relative w-full rounded-xl overflow-hidden mb-3" style={{ aspectRatio: '251.14 / 238.58' }}>
         <Image
