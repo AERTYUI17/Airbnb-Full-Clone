@@ -1,6 +1,7 @@
 'use client'
 
-import { useRouter, useLocale } from "next-intl";
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 import { mockProperties, trendingProperties, nearbyProperties } from "@/data/mock-properties";
 import Link from "next/link";
 import Image from "next/image";

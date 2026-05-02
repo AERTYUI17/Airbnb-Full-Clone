@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter, useLocale } from "next-intl";
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 import Image from "next/image";
 import { Heart, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import type { Property } from "./property-carousel";

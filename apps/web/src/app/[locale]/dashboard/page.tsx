@@ -1,4 +1,5 @@
 'use client';
+export const dynamic = 'force-dynamic';
 
 import { useTranslations } from 'next-intl';
 import { User, Mail, Phone, MapPin } from 'lucide-react';
