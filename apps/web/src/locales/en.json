@@ -1,0 +1,68 @@
+{
+  "navigation": {
+    "homes": "Homes",
+    "experiences": "Experiences",
+    "help": "Help",
+    "signup": "Sign up",
+    "login": "Login",
+    "language": "Language",
+    "currency": "Currency",
+    "becomesHost": "Become a Host",
+    "dashboard": "Dashboard"
+  },
+  "search": {
+    "placeholder": "Search locations in Algeria",
+    "wheresGoing": "Where's going?",
+    "addDates": "Add dates",
+    "addGuests": "Add guests",
+    "searchButton": "Search"
+  },
+  "hero": {
+    "title": "Not sure where to go? Perfect.",
+    "explore": "Explore nearby"
+  },
+  "inspiration": {
+    "title": "Inspiration for your next trip",
+    "viewAll": "View all",
+    "nearby": "Nearby getaways",
+    "uniqueStays": "Unique stays",
+    "adventurous": "Adventurous things to do"
+  },
+  "footer": {
+    "support": "Support",
+    "hosting": "Hosting",
+    "ajir": "Ajir",
+    "copyright": "© 2026 Ajir, Inc.",
+    "ajircoverHost": "AjirCover for hosts",
+    "hostOnAjir": "Put your home on Ajir",
+    "resourcesForHosts": "Resources for hosts",
+    "helperCenter": "Help Center",
+    "contactUs": "Contact us",
+    "news": "News"
+  },
+  "dashboard": {
+    "profile": "Profile",
+    "bookings": "Bookings",
+    "saved": "Saved",
+    "listings": "Listings",
+    "reviews": "Reviews",
+    "settings": "Settings",
+    "logout": "Logout",
+    "welcomeBack": "Welcome back!",
+    "yourBookings": "Your Bookings",
+    "savedProperties": "Saved Properties",
+    "noBookings": "No bookings yet",
+    "noSaved": "No saved properties",
+    "editProfile": "Edit Profile",
+    "preferences": "Preferences"
+  },
+  "locations": {
+    "algiers": "Algiers",
+    "oran": "Oran",
+    "constantine": "Constantine",
+    "annaba": "Annaba",
+    "blida": "Blida",
+    "tlemcen": "Tlemcen",
+    "algeria": "Algeria"
+  }
+}

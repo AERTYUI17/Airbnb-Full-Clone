@@ -1,0 +1,68 @@
+{
+  "navigation": {
+    "homes": "Nyumba",
+    "experiences": "Uzoefu",
+    "help": "Msaada",
+    "signup": "Jifungue",
+    "login": "Ingia",
+    "language": "Lugha",
+    "currency": "Sarafu",
+    "becomesHost": "Kuwa Mwenyeji",
+    "dashboard": "Dashibodi"
+  },
+  "search": {
+    "placeholder": "Tafuta maeneo ya Algeria",
+    "wheresGoing": "Unakwenda wapi?",
+    "addDates": "Ongeza tarehe",
+    "addGuests": "Ongeza wageni",
+    "searchButton": "Tafuta"
+  },
+  "hero": {
+    "title": "Si nzuri sehemu uliyenda? Sawa kabisa.",
+    "explore": "Tukuza jirani"
+  },
+  "inspiration": {
+    "title": "Motisha kwa ajali yako inayofuata",
+    "viewAll": "Angalia yote",
+    "nearby": "Likizo jirani",
+    "uniqueStays": "Upumziko wa kipekee",
+    "adventurous": "Mambo ya kumfanya kwa kusikitisha"
+  },
+  "footer": {
+    "support": "Msaada",
+    "hosting": "Ukarimu",
+    "ajir": "Ajir",
+    "copyright": "© 2026 Ajir, Inc.",
+    "ajircoverHost": "Ajir Cover kwa Wahosifu",
+    "hostOnAjir": "Weka nyumba yako kwenye Ajir",
+    "resourcesForHosts": "Rasilimali kwa Wahosifu",
+    "helperCenter": "Kituo cha Usaidizi",
+    "contactUs": "Wasiliana nasi",
+    "news": "Habari"
+  },
+  "dashboard": {
+    "profile": "Profaili",
+    "bookings": "Mabookings",
+    "saved": "Imehifadhiwa",
+    "listings": "Orodha",
+    "reviews": "Maoni",
+    "settings": "Mipangilio",
+    "logout": "Toka",
+    "welcomeBack": "Karibu tena!",
+    "yourBookings": "Mabookings Yako",
+    "savedProperties": "Mali Iliyohifadhiwa",
+    "noBookings": "Hakuna mabookings hadi sasa",
+    "noSaved": "Hakuna mali iliyohifadhiwa",
+    "editProfile": "Hariri Profaili",
+    "preferences": "Mapendekezo"
+  },
+  "locations": {
+    "algiers": "Algiers",
+    "oran": "Oran",
+    "constantine": "Constantine",
+    "annaba": "Annaba",
+    "blida": "Blida",
+    "tlemcen": "Tlemcen",
+    "algeria": "Aljeria"
+  }
+}

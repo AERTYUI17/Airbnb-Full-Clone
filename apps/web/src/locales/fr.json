@@ -1,0 +1,68 @@
+{
+  "navigation": {
+    "homes": "Logements",
+    "experiences": "Expériences",
+    "help": "Aide",
+    "signup": "S'inscrire",
+    "login": "Se connecter",
+    "language": "Langue",
+    "currency": "Devise",
+    "becomesHost": "Devenir hôte",
+    "dashboard": "Tableau de bord"
+  },
+  "search": {
+    "placeholder": "Rechercher des lieux en Algérie",
+    "wheresGoing": "Où allez-vous?",
+    "addDates": "Ajouter des dates",
+    "addGuests": "Ajouter des voyageurs",
+    "searchButton": "Rechercher"
+  },
+  "hero": {
+    "title": "Vous ne savez pas où aller? Parfait.",
+    "explore": "Explorez les environs"
+  },
+  "inspiration": {
+    "title": "L'inspiration pour votre prochain voyage",
+    "viewAll": "Afficher tout",
+    "nearby": "Escapades à proximité",
+    "uniqueStays": "Séjours uniques",
+    "adventurous": "Choses amusantes à faire"
+  },
+  "footer": {
+    "support": "Assistance",
+    "hosting": "Hébergement",
+    "ajir": "Ajir",
+    "copyright": "© 2026 Ajir, Inc.",
+    "ajircoverHost": "AjirCover pour les hôtes",
+    "hostOnAjir": "Mettez votre logement sur Ajir",
+    "resourcesForHosts": "Ressources pour les hôtes",
+    "helperCenter": "Centre d'aide",
+    "contactUs": "Nous contacter",
+    "news": "Actualités"
+  },
+  "dashboard": {
+    "profile": "Profil",
+    "bookings": "Réservations",
+    "saved": "Enregistré",
+    "listings": "Annonces",
+    "reviews": "Avis",
+    "settings": "Paramètres",
+    "logout": "Se déconnecter",
+    "welcomeBack": "Bienvenue!",
+    "yourBookings": "Vos réservations",
+    "savedProperties": "Propriétés enregistrées",
+    "noBookings": "Aucune réservation pour le moment",
+    "noSaved": "Aucune propriété enregistrée",
+    "editProfile": "Modifier le profil",
+    "preferences": "Préférences"
+  },
+  "locations": {
+    "algiers": "Alger",
+    "oran": "Oran",
+    "constantine": "Constantine",
+    "annaba": "Annaba",
+    "blida": "Blida",
+    "tlemcen": "Tlemcen",
+    "algeria": "Algérie"
+  }
+}

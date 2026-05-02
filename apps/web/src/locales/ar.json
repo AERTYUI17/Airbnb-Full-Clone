@@ -1,0 +1,68 @@
+{
+  "navigation": {
+    "homes": "الفنادق",
+    "experiences": "الخبرات",
+    "help": "المساعدة",
+    "signup": "اشترك",
+    "login": "دخول",
+    "language": "اللغة",
+    "currency": "العملة",
+    "becomesHost": "كن مضيفًا",
+    "dashboard": "لوحة التحكم"
+  },
+  "search": {
+    "placeholder": "ابحث عن مواقع في الجزائر",
+    "wheresGoing": "أين أنت ذاهب؟",
+    "addDates": "إضافة التواريخ",
+    "addGuests": "إضافة الضيوف",
+    "searchButton": "بحث"
+  },
+  "hero": {
+    "title": "غير متأكد من المكان الذي تريد الذهاب إليه؟ تمام التمام.",
+    "explore": "استكشف القريبة"
+  },
+  "inspiration": {
+    "title": "الإلهام لرحلتك التالية",
+    "viewAll": "عرض الكل",
+    "nearby": "الهروب القريبة",
+    "uniqueStays": "إقامات فريدة",
+    "adventurous": "أشياء مغامرة للقيام بها"
+  },
+  "footer": {
+    "support": "الدعم",
+    "hosting": "الاستضافة",
+    "ajir": "أجير",
+    "copyright": "© 2026 أجير، شركة",
+    "ajircoverHost": "أجيرCover للمضيفين",
+    "hostOnAjir": "ضع منزلك على أجير",
+    "resourcesForHosts": "موارد للمضيفين",
+    "helperCenter": "مركز المساعدة",
+    "contactUs": "اتصل بنا",
+    "news": "الأخبار"
+  },
+  "dashboard": {
+    "profile": "الملف الشخصي",
+    "bookings": "الحجوزات",
+    "saved": "محفوظ",
+    "listings": "القوائم",
+    "reviews": "التقييمات",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج",
+    "welcomeBack": "مرحبا بعودتك!",
+    "yourBookings": "حجوزاتك",
+    "savedProperties": "الخصائص المحفوظة",
+    "noBookings": "لا توجد حجوزات حتى الآن",
+    "noSaved": "لا توجد خصائص محفوظة",
+    "editProfile": "تحرير الملف الشخصي",
+    "preferences": "التفضيلات"
+  },
+  "locations": {
+    "algiers": "الجزائر العاصمة",
+    "oran": "وهران",
+    "constantine": "قسنطينة",
+    "annaba": "عنابة",
+    "blida": "البليدة",
+    "tlemcen": "تلمسان",
+    "algeria": "الجزائر"
+  }
+}

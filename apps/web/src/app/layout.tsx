@@ -1,37 +1,17 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Ajir - Plataforma de Alojamientos",
-  description: "Ajir - Plataforma moderna de alojamientos con arquitectura de microservicios | Next.js 15 + NestJS + Prisma + Stripe | JWT Auth, Booking System, Payments, Reviews & Favorites | 33 REST API endpoints | shadcn/ui + TailwindCSS | TypeScript monorepo",
+  description: "Ajir - Plataforma moderna de alojamientos | Disponible en Árabe, Chino, Inglés, Suajili y Francés",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
-  return (
-    <html lang="es">
-      <head>
-        <link
-          rel="preload"
-          href="/fonts/AirbnbCereal-Bk.otf"
-          as="font"
-          type="font/otf"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/AirbnbCereal-Md.otf"
-          as="font"
-          type="font/otf"
-          crossOrigin="anonymous"
-        />
-      </head>
-      <body>
-        {children}
-      </body>
-    </html>
-  );
+  return children;
 }

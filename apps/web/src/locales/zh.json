@@ -1,0 +1,68 @@
+{
+  "navigation": {
+    "homes": "民宿",
+    "experiences": "体验",
+    "help": "帮助",
+    "signup": "注册",
+    "login": "登录",
+    "language": "语言",
+    "currency": "货币",
+    "becomesHost": "成为房东",
+    "dashboard": "仪表板"
+  },
+  "search": {
+    "placeholder": "搜索阿尔及利亚的地点",
+    "wheresGoing": "你要去哪里?",
+    "addDates": "添加日期",
+    "addGuests": "添加客人",
+    "searchButton": "搜索"
+  },
+  "hero": {
+    "title": "不确定去哪里? 完美的。",
+    "explore": "探索附近地区"
+  },
+  "inspiration": {
+    "title": "下次旅行的灵感",
+    "viewAll": "查看全部",
+    "nearby": "附近的度假胜地",
+    "uniqueStays": "独特的住宿",
+    "adventurous": "冒险活动"
+  },
+  "footer": {
+    "support": "支持",
+    "hosting": "房源",
+    "ajir": "Ajir",
+    "copyright": "© 2026 Ajir 公司",
+    "ajircoverHost": "房东保障计划",
+    "hostOnAjir": "在 Ajir 上出租您的家",
+    "resourcesForHosts": "房东资源",
+    "helperCenter": "帮助中心",
+    "contactUs": "联系我们",
+    "news": "新闻"
+  },
+  "dashboard": {
+    "profile": "个人资料",
+    "bookings": "预订",
+    "saved": "已保存",
+    "listings": "房源",
+    "reviews": "评价",
+    "settings": "设置",
+    "logout": "退出登录",
+    "welcomeBack": "欢迎回来!",
+    "yourBookings": "您的预订",
+    "savedProperties": "已保存的房源",
+    "noBookings": "尚无预订",
+    "noSaved": "没有已保存的房源",
+    "editProfile": "编辑个人资料",
+    "preferences": "偏好设置"
+  },
+  "locations": {
+    "algiers": "阿尔及尔",
+    "oran": "奥兰",
+    "constantine": "君士坦丁堡",
+    "annaba": "安纳巴",
+    "blida": "布利达",
+    "tlemcen": "特莱姆森",
+    "algeria": "阿尔及利亚"
+  }
+}

@@ -1,20 +1,26 @@
 'use client'
 
 import { useState, useEffect } from "react";
-import { Globe, Menu, Search } from "lucide-react";
+import { Menu, Search } from "lucide-react";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 import Logo from "../shared/logo";
 import SearchBar from "./searchBar";
+import LanguageSwitcher from "./language-switcher";
 
 const Header = () => {
+    const t = useTranslations('navigation');
+    const searchT = useTranslations('search');
+    const locale = useLocale();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isExpanded, setIsExpanded] = useState(false);
-    const [activeTab, setActiveTab] = useState("Alojamientos");
+    const [activeTab, setActiveTab] = useState(t('homes'));
     const [initialSearchSection, setInitialSearchSection] = useState<'destination' | 'dates' | 'guests' | null>(null);
 
     const navItems = [
-        { videoSrc: "/videos/house.webm", label: "Alojamientos" },
-        { videoSrc: "/videos/balloon.webm", label: "Experiencias" },
-        { videoSrc: "/videos/consierge.webm", label: "Servicios" },
+        { videoSrc: "/videos/house.webm", label: t('homes') },
+        { videoSrc: "/videos/balloon.webm", label: t('experiences') },
+        { videoSrc: "/videos/consierge.webm", label: t('help') },
     ]
 
     useEffect(() => {
@@ -91,7 +97,7 @@ const Header = () => {
                                 }}
                                 className="flex-1 px-3 py-2.5 text-sm font-medium hover:bg-gray-50 rounded-full transition-colors cursor-pointer"
                             >
-                                Cualquier lugar
+                                {searchT('wheresGoing')}
                             </button>
                             <div className="h-5 w-px bg-gray-300"></div>
                             <button 
@@ -101,7 +107,7 @@ const Header = () => {
                                 }}
                                 className="flex-1 px-3 py-2.5 text-sm font-medium hover:bg-gray-50 rounded-full transition-colors cursor-pointer"
                             >
-                                Cualquier fecha
+                                {searchT('addDates')}
                             </button>
                             <div className="h-5 w-px bg-gray-300"></div>
                             <button 
@@ -111,7 +117,7 @@ const Header = () => {
                                 }}
                                 className="flex-1 px-3 py-2.5 text-sm text-gray-500 hover:bg-gray-50 rounded-full transition-colors cursor-pointer"
                             >
-                                Añade viajeros
+                                {searchT('addGuests')}
                             </button>
                             <div className="bg-primary text-white p-2 rounded-full mr-1">
                                 <Search className="w-4 h-4" />
@@ -120,13 +126,11 @@ const Header = () => {
                     </div>
                     
                     <div className="flex items-center gap-2">
-                        <button className="hidden md:block text-sm font-medium px-4 py-2.5 rounded-full hover:bg-gray-100 transition-all duration-200 cursor-pointer">
-                            Hazte anfitrión
-                        </button>
+                        <Link href={`/${locale}/dashboard`} className="hidden md:block text-sm font-medium px-4 py-2.5 rounded-full hover:bg-gray-100 transition-all duration-200 cursor-pointer">
+                            {t('becomesHost')}
+                        </Link>
                         
-                        <button className="p-2.5 hover:bg-gray-100 rounded-full transition-all duration-200 cursor-pointer">
-                            <Globe className="w-5 h-5 text-gray-700" />
-                        </button>
+                        <LanguageSwitcher />
                         
                         <button className="flex items-center gap-2 px-3 py-2 bg-white border border-gray-300 rounded-full hover:shadow-md transition-all duration-200 cursor-pointer">
                             <Menu className="w-4 h-4 text-gray-700" />
