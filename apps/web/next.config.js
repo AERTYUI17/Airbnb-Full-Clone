@@ -2,8 +2,9 @@
 const withNextIntl = require('next-intl/plugin')('./src/i18n.ts');
 
 const nextConfig = {
-  experimental: {
-    reactCompiler: true,
+  reactCompiler: true,
+  turbopack: {
+    root: '../../',
   },
 };
 
